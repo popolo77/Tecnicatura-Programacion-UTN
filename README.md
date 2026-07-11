@@ -1,11 +1,20 @@
 # 🎓 Tecnicatura Universitaria en Programación (TUP) - UTN
 
-> Repositorio centralizado con el plan de estudios oficial (Ordenanza N° 2067), contenidos mínimos de las asignaturas, trabajos prácticos y resoluciones. Este espacio funciona como bitácora de aprendizaje y portfolio técnico.
+### 🚀 Stack Tecnológico de la Carrera
 
-### 🛠️ Tecnologías Core de la Carrera
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+**Lenguajes de Programación**
+![C](https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=white) ![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white) ![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) ![SQL](https://img.shields.io/badge/SQL-CC2927?style=for-the-badge&logo=microsoft-sql-server&logoColor=white)
+
+**Desarrollo Frontend & Backend**
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white) ![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white) ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+
+**Bases de Datos & Cloud**
+![MySQL](https://img.shields.io/badge/MySQL-00758F?style=for-the-badge&logo=mysql&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white) ![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white) ![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
+
+**Entorno, Análisis & Gestión**
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white) ![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white) ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black) ![Bash](https://img.shields.io/badge/Shell_Script-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white) ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white) ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white) ![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white) ![Jira](https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=jira&logoColor=white) ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
+
+> Repositorio centralizado con el plan de estudios oficial (Ordenanza N° 2067), contenidos mínimos completos de las asignaturas, trabajos prácticos y resoluciones de la carrera dictada en la Universidad Tecnológica Nacional.
 
 ---
 
@@ -14,95 +23,137 @@
 *Leyenda de estados:* 🟢 **Promocionada** | 🟡 **Regular (Final Pendiente)** | ⚪ **Pendiente / Cursando**
 
 ### 🔹 PRIMER CUATRIMESTRE
-- [x] 🟢 **Programación I** (128 hs)
-  ![C](https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=c&logoColor=white) ![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=flat-square&logo=c%2B%2B&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-  * **Contenidos mínimos:** Paradigmas, Programación Imperativa, Algoritmos, Estructuras de Control, Funciones, Recursividad, y Algoritmos de Ordenamiento.
 
-- [x] 🟢 **Arquitectura y Sistemas Operativos** (64 hs)
-  ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black) ![Bash](https://img.shields.io/badge/Shell_Script-4EAA25?style=flat-square&logo=gnu-bash&logoColor=white) ![VirtualBox](https://img.shields.io/badge/VirtualBox-214294?style=flat-square&logo=virtualbox&logoColor=white)
-  * **Contenidos mínimos:** Arquitectura, clasificación de SO, Procesos e hilos, Gestión de Memoria, Sistemas de Archivos, Redes y Virtualización.
+- [x] 🟢 **01 - Programación I** (128 hs reloj)
+  * **Contenidos Mínimos:** Introducción a los distintos paradigmas de programación, Programación Imperativa, Concepto de algoritmo, Estrategias de Resolución de problemas, Concepto y tipos de datos, Variables y constantes, Estructuras de Control Básicas, Estructuras de Datos, Abstracciones con procedimientos y funciones, Recursividad, Algoritmos de Búsqueda, Recorrido y Ordenamiento.
+  * 📁 **Trabajos Prácticos:**
+    * `TP 1:` _[Completar con el nombre de tu TP]_
+    * `TPI Final:` _[Completar con el nombre de tu proyecto integrador]_
 
-- [x] 🟢 **Matemática** (64 hs)
-  ![Markdown](https://img.shields.io/badge/Markdown-000000?style=flat-square&logo=markdown&logoColor=white)
-  * **Contenidos mínimos:** Conjuntos, Sistema binario, Matrices, Lógica, Álgebra de Boole, Grafos y árboles.
+- [x] 🟢 **02 - Arquitectura y Sistemas Operativos** (64 hs reloj)
+  * **Contenidos Mínimos:** Arquitectura de computadoras, Estructura, características y clasificación de Sistemas Operativos, Planificación e hilos en Procesos. Comunicación y Sincronización entre Procesos, Gestión de Memoria, Sistemas de Archivos, Gestión de Entrada/Salida. Interrupciones, Introducción a las redes de datos, Virtualización.
+  * 📁 **Trabajos Prácticos:**
+    * `TP 1:` _[Completar con el nombre de tu TP]_
+    * `TPI Final:` _[Completar con el nombre de tu proyecto integrador]_
 
-- [ ] 🟡 **Organización Empresarial** (64 hs) *[Regular]*
-  ![Miro](https://img.shields.io/badge/Miro-050038?style=flat-square&logo=miro&logoColor=white)
-  * **Contenidos mínimos:** Teoría general de Sistemas, Toma de Decisiones, Organización y Empresa, Sistemas administrativos, Gestión por Procesos.
+- [x] 🟢 **03 - Matemática** (64 hs reloj)
+  * **Contenidos Mínimos:** Conjuntos. Pertenencia, inclusión. Operaciones básicas. Producto cartesiano. Relaciones binarias, Sistema binario, Matrices. Operaciones, Lógica, Algebra de Boole, Grafos y árboles.
+  * 📁 **Trabajos Prácticos:**
+    * `TP 1:` _[Completar con el nombre de tu TP]_
+
+- [ ] 🟡 **04 - Organización Empresarial** (64 hs reloj) *[Regular]*
+  * **Contenidos Mínimos:** Teoría general de Sistemas, Información, Conocimiento y Toma de Decisiones, Organización y Empresa, Sistemas administrativos y contables, Planificación, organización, dirección y control, Gestión por Procesos.
+  * 📁 **Trabajos Prácticos:**
+    * `TP 1:` _[Completar con el nombre de tu TP]_
 
 ---
 
 ### 🔹 SEGUNDO CUATRIMESTRE
-- [ ] ⚪ **Programación II** (128 hs)
-  ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white) ![C#](https://img.shields.io/badge/C%23-239120?style=flat-square&logo=c-sharp&logoColor=white)
-  * **Contenidos mínimos:** Principios de POO, Clases, Métodos, Constructores, Colecciones, ABMC e Introducción a Servicios WEB.
 
-- [ ] ⚪ **Probabilidad y Estadística** (64 hs)
-  ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-  * **Contenidos mínimos:** Datos Estadísticos, Análisis combinatorio, Estadística descriptiva, Probabilidades, Muestreo y Estimación.
+- [ ] ⚪ **05 - Programación II** (128 hs reloj)
+  * **Contenidos Mínimos:** Principios de la Orientación a Objetos, Clases. Concepto y elementos de una clase. Atributos y métodos. Implementación, Constructores, Enumeraciones, Arreglos y colecciones, Acceso a datos, Gestión de altas, bajas, modificación y consultas (ABMC), Introducción a Servicios WEB.
+  * 📁 **Trabajos Prácticos:**
+    * `TPI Final:` _[Pendiente]_
 
-- [ ] ⚪ **Bases de Datos I** (64 hs)
-  ![SQL](https://img.shields.io/badge/SQL-CC2927?style=flat-square&logo=microsoft-sql-server&logoColor=white) ![MySQL](https://img.shields.io/badge/MySQL-00758F?style=flat-square&logo=mysql&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white)
-  * **Contenidos mínimos:** Modelo Entidad-Relación, Diseño de BD, Normalización, Lenguajes de acceso (SQL), Transacciones y concurrencia.
+- [ ] ⚪ **06 - Probabilidad y Estadística** (64 hs reloj)
+  * **Contenidos Mínimos:** Datos Estadísticos, Análisis combinatorio, Estadística descriptiva, Teoría de las Probabilidades, Variables aleatorias. Distribuciones de Probabilidad, Teoría del Muestreo. Estimación.
+  * 📁 **Trabajos Prácticos:**
+    * `TP 1:` _[Pendiente]_
 
-- [ ] ⚪ **Inglés I** (64 hs)
-  ![English](https://img.shields.io/badge/English-Technical-blue?style=flat-square)
-  * **Contenidos mínimos:** Competencia comunicativa técnica, géneros discursivos académico-profesionales, interpretación y traducción léxica.
+- [ ] ⚪ **07 - Bases de Datos I** (64 hs reloj)
+  * **Contenidos Mínimos:** Modelo conceptual de datos (Entidades, Atributos, Relaciones), Modelo Relacional, Sistema de Gestión de Bases de Datos Relacional, Diseño de base de datos, Formas normales. Normalización, Lenguajes de acceso a Bases de Datos Relacionales, Integridad de Datos. Transacciones y acceso concurrente.
+  * 📁 **Trabajos Prácticos:**
+    * `TPI Final:` _[Pendiente]_
+
+- [ ] ⚪ **08 - Inglés I** (64 hs reloj)
+  * **Contenidos Mínimos:** Dimensión lingüística: agencia y nominalización simple; campos semánticos y lexicales; temporalidad, aspectualidad, modality y voz (frases verbales simples); complementación circunstancial simple; coordinación y subordinación. Dimensión sociolingüístico-discursiva: géneros discursivos (dominio académico-profesional con carga lexical y estructura discursiva sencilla); mecanismos de construcción de textos para su interpretación y producción; coherencia y cohesión. Dimensión estratégica: elementos textuales y paratextuales como facilitadores de la comprensión, uso de extranjerización, interpretación y traducción léxica, formación de palabras, demostración, descripción, entre otras. Dimensión socio-cultural: componentes del contexto comunicativo en el que la comunicación emerge. Reconocimiento de contexto socio-histórico en el dominio académico-profesional: convenciones sociales, costumbres, sistema de valores, normas de convivencia, organización institucional, entre otros.
+  * 📁 **Trabajos Prácticos:**
+    * `TP 1:` _[Pendiente]_
 
 ---
 
 ### 🔹 TERCER CUATRIMESTRE
-- [ ] ⚪ **Programación III** (128 hs)
-  ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white)
-  * **Contenidos mínimos:** Aplicaciones y Servicios WEB, Servidor/Cliente, Diseño Mobile Responsive, Tecnologías Front/Back, Mapeo objeto-relacional (ORM).
 
-- [ ] ⚪ **Bases de Datos II** (64 hs)
-  ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white) ![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
-  * **Contenidos mínimos:** Optimización de consultas, Índices y vistas, Seguridad, Tecnologías NoSQL, Bases de Datos para dispositivos móviles.
+- [ ] ⚪ **09 - Programación III** (128 hs reloj)
+  * **Contenidos Mínimos:** Aplicaciones WEB, Servicios WEB, Arquitectura de las aplicaciones WEB, Desarrollo de aplicaciones para Internet, Conceptos de Servidor WEB y Cliente WEB, Diseño de aplicaciones Mobile: Responsive. First Mobile. Aplicaciones Nativas, Introducción a Tecnologías Mobile, Tecnologías Front-End y Back-End, Validación de controles, Transmisión de datos entre formularios, Mapeo objeto-relacional (ORM).
+  * 📁 **Trabajos Prácticos:**
+    * `TPI Final:` _[Pendiente]_
 
-- [ ] ⚪ **Metodología de Sistemas I** (64 hs)
-  ![UML](https://img.shields.io/badge/UML-PlantUML-blue?style=flat-square) ![Agile](https://img.shields.io/badge/Agile-Scrum-orange?style=flat-square)
-  * **Contenidos mínimos:** Componentes del proceso de desarrollo, herramientas de gestión de proyectos, ejecución y análisis de pruebas.
+- [ ] ⚪ **10 - Bases de Datos II** (64 hs reloj)
+  * **Contenidos Mínimos:** Integridad de datos. Transacciones y acceso concurrente, Optimización de consultas, Gestión de índices y vistas, Administración y Seguridad, Mantenimiento de una Base de Datos, Normalización avanzada y eliminación de redundancia, Otras Bases de Datos, Tecnologías de lenguaje de consulta no estructurado (NoSQL) y nuevas formas de almacenamiento, Base de Datos para dispositivos móviles.
+  * 📁 **Trabajos Prácticos:**
+    * `TPI Final:` _[Pendiente]_
 
-- [ ] ⚪ **Inglés II** (64 hs)
-  ![English](https://img.shields.io/badge/English-Scientific-blue?style=flat-square)
-  * **Contenidos mínimos:** Competencia técnica-científica avanzada, estructuras complejas, contexto comunicativo intercultural.
+- [ ] ⚪ **11 - Metodología de Sistemas I** (64 hs reloj)
+  * **Contenidos Mínimos:** Proceso de desarrollo de software: principales componentes, Herramientas empleadas en el proceso de desarrollo de software, Técnicas y herramientas de gestión de proyectos de software, Ejecución y análisis de resultados generados por las operaciones de pruebas.
+  * 📁 **Trabajos Prácticos:**
+    * `TP 1:` _[Pendiente]_
+
+- [ ] ⚪ **12 - Inglés II** (64 hs reloj)
+  * **Contenidos Mínimos:** Dimensión lingüística: agencia y nominalización compleja; campos semánticos y lexicales; temporalidad, aspectualidad, modalidad y voz (frases verbales compuestos); complementación circunstancial compleja; coordinación y subordinación. Dimensión sociolingüístico-discursiva: géneros discursivos (dominio académico-científico con carga lexical y estructura discursiva compleja); mecanismos personalizados de construcción de textos para su interpretación y producción; coherencia y cohesión; dispositivos de prominencia textual. Dimensión estratégica: interpretación y uso de paráfrasis, sustitución, circunloquio, gesticulación, entre otras. Dimensión socio-cultural: componentes del contexto comunicativo intercultural en el que la comunicación emerge. Reconocimiento de contexto socio-histórico en el dominio académico-científico: sistema de valores, patrones de socialización, organización institucional, posicionamiento político local-global, entre otros.
+  * 📁 **Trabajos Prácticos:**
+    * `TP 1:` _[Pendiente]_
 
 ---
 
 ### 🔹 CUARTO CUATRIMESTRE
-- [ ] ⚪ **Programación IV** (128 hs)
-  ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=flat-square&logo=node.js&logoColor=white) ![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB) ![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black)
-  * **Contenidos mínimos:** Autenticación externa, BD en tiempo real, programación avanzada cliente/servidor.
 
-- [ ] ⚪ **Metodología de Sistemas II** (64 hs)
-  ![Design_Patterns](https://img.shields.io/badge/Patterns-GoF-brightgreen?style=flat-square)
-  * **Contenidos mínimos:** Patrones de diseño, buenas prácticas de implementación, optimización del ciclo de desarrollo, herramientas de verificación.
+- [ ] ⚪ **13 - Programación IV** (128 hs reloj)
+  * **Contenidos Mínimos:** Autenticación por medios externos, Aplicación de base de datos en tiempo real, Programación del lado del cliente, Programación del lado del servidor y comunicación con el cliente, Arquitectura Cliente-Servidor.
+  * 📁 **Trabajos Prácticos:**
+    * `TPI Final:` _[Pendiente]_
 
-- [ ] ⚪ **Introducción al Análisis de Datos** (32 hs)
-  ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white) ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
-  * **Contenidos mínimos:** Conceptos fundamentales, herramientas de análisis de datos y modelado.
+- [ ] ⚪ **14 - Metodología de Sistemas II** (64 hs reloj)
+  * **Contenidos Mínimos:** Introducción a los patrones de diseño y desarrollo de software, Buenas prácticas en el proceso de implementación de software, Técnicas de optimización del ciclo de desarrollo de software, Herramientas de verificación y validación en el desarrollo de software, Herramientas de repositorios de software.
+  * 📁 **Trabajos Prácticos:**
+    * `TP 1:` _[Pendiente]_
 
-- [ ] ⚪ **Legislación** (32 hs)
-  ![Law](https://img.shields.io/badge/Legal-Copyright_/_IT-lightgrey?style=flat-square)
-  * **Contenidos mínimos:** Derecho Informático, propiedad intelectual, responsabilidades profesionales en software, seguridad de la información.
+- [ ] ⚪ **15 - Introducción al Análisis de Datos** (32 hs reloj)
+  * **Contenidos Mínimos:** Introducción al Análisis de Datos, Herramientas de análisis de datos, Modelado.
+  * 📁 **Trabajos Prácticos:**
+    * `TP 1:` _[Pendiente]_
 
-- [ ] ⚪ **Gestión de Desarrollos de Software** (64 hs)
-  ![Jira](https://img.shields.io/badge/Jira-0052CC?style=flat-square&logo=jira&logoColor=white) ![Trello](https://img.shields.io/badge/Trello-0079BF?style=flat-square&logo=trello&logoColor=white)
-  * **Contenidos mínimos:** Ingeniería de Requerimientos, métricas, estimación de tiempos/costos, calendarización e hitos.
+- [ ] ⚪ **16 - Legislación** (32 hs reloj)
+  * **Contenidos Mínimos:** Introducción al Derecho y a las Sociedades, Legislación laboral, Derecho Informático y propiedad intelectual, Responsabilidades civiles, penales y profesionales relacionadas con el desarrollo de software, Actuación de los Técnicos Universitarios en Programación durante los procesos judiciales, Seguridad de la información.
+  * 📁 **Trabajos Prácticos:**
+    * `TP 1:` _[Pendiente]_
 
-- [ ] ⚪ **Trabajo Final Integrador** (95 hs)
-  ![Fullstack](https://img.shields.io/badge/Fullstack-Project-success?style=flat-square)
-  * **Enfoque:** Integración total para resolver un problema de desarrollo de software aplicable al entorno real o simulado.
+- [ ] ⚪ **17 - Gestión de Desarrollos de Software** (64 hs reloj)
+  * **Contenidos Mínimos:** Software. Proceso. Producto. Ingeniería de Requerimientos, Propuesta de Proyecto. Descripción. Objetivos, Alcance. Inclusiones. Exclusiones. Registro de Interesados, Criterios de aceptación. Supuestos y restricciones del proyecto, Estimación de tiempos y costos en proyectos de tecnologías de la información. Métricas de Software, Calendarización del proyecto. Cronograma de hitos del proyecto (distribución de tiempos de los productos entregables intermedios y finales que se generarán en cada fase del proyecto) Definición de las iteraciones del proyecto, Artefactos técnicos requeridos (documentación técnica y código), Reportes. Indicadores. Estadísticas, Manuales e Instructivos.
+  * 📁 **Trabajos Prácticos:**
+    * `TP 1:` _[Pendiente]_
+
+- [ ] ⚪ **18 - Trabajo Final Integrador** (95 hs reloj)
+  * **Contenidos Mínimos:** Integración de todos los conocimientos adquiridos para el planteamiento de posibles soluciones a problemas de desarrollo de un producto de software en contextos reales o simulados, incorporando elementos originales, bajo la supervisión de un docente tutor que guíe la resolución de una problemática relacionada con los alcances de la carrera. El producto final se define como un desarrollo de software aplicable al entorno, con posibilidades de transferencia al medio, o una solución, priorizando la resolución de problemas locales o del territorio.
+  * 📁 **Trabajos Prácticos:**
+    * `TPI Proyecto Final:` _[Pendiente]_
 
 ---
 
 ## 📂 Estructura Física del Repositorio
 
+La organización de los directorios en este monorepo sigue estrictamente la división por cuatrimestres y la numeración oficial establecida por el plan de estudio:
+
 ```text
-├── Primer-Año/
-│   ├── Programacion-I/
-│   ├── Sistemas-Procesamiento-Datos/
-│   └── Matematica/
-└── Segundo-Año/
-    └── Organizacion-Empresarial/
+├── 1-Cuatrimestre/
+│   ├── 01-Programacion-I/
+│   ├── 02-Arquitectura-Sistemas-Operativos/
+│   ├── 03-Matematica/
+│   └── 04-Organizacion-Empresarial/
+├── 2-Cuatrimestre/
+│   ├── 05-Programacion-II/
+│   ├── 06-Probabilidad-Estadistica/
+│   ├── 07-Base-Datos-I/
+│   └── 08-Ingles-I/
+├── 3-Cuatrimestre/
+│   ├── 09-Programacion-III/
+│   ├── 10-Base-Datos-II/
+│   ├── 11-Metodologia-Sistemas-I/
+│   └── 12-Ingles-II/
+└── 4-Cuatrimestre/
+    ├── 13-Programacion-IV/
+    ├── 14-Metodologia-Sistemas-II/
+    ├── 15-Introduccion-Analisis-Datos/
+    ├── 16-Legislacion/
+    ├── 17-Gestion-Desarrollo-Software/
+    └── 18-Trabajo-Final-Integrador/

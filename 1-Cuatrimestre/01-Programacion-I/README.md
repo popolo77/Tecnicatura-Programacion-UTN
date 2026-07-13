@@ -64,5 +64,5 @@ Podés navegar por cada unidad temática y revisar los trabajos prácticos seman
 ---
 
 ## 🧠 Material de Consulta Rápida
-* [📝 Manual Extenso de Apuntes Teóricos](./🤔%20Teoria/apuntes_teoria.md)
-* [🪓 Machete de Sintaxis Rápida de Python](./🤔%20Teoria/machetes-sintaxis.md)
+* [📝 Manual Extenso de Apuntes Teóricos](./🤔%20Teoria/Apuntes/apuntes_teoria.md)
+* [🪓 Machete de Sintaxis Rápida de Python](./🤔%20Teoria/Apuntes/machetes-sintaxis.md)

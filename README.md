@@ -36,10 +36,10 @@
     * `TP 1:` _[Completar con el nombre de tu TP]_
     * `TPI Final:` _[Completar con el nombre de tu proyecto integrador]_
 
-- [x] 🟢 **03 - Matemática** (64 hs reloj)
-  * **Contenidos Mínimos:** Conjuntos. Pertenencia, inclusión. Operaciones básicas. Producto cartesiano. Relaciones binarias, Sistema binario, Matrices. Operaciones, Lógica, Algebra de Boole, Grafos y árboles.
-  * 📁 **Trabajos Prácticos:**
-    * `TP 1:` _[Completar con el nombre de tu TP]_
+- [x] 🟢 ***03 - Matemática*** (64 hs reloj) **[Aprobada - Nota: 9]**
+   * ***Contenidos Mínimos:*** Conjuntos. Pertenencia, inclusión. Operaciones básicas. Producto cartesiano. Relaciones binarias, Sistema binario, Matrices. Operaciones, Lógica, Algebra de Boole, Grafos y árboles.
+   * 📁 ***Trabajos Prácticos:***
+     * `TP 1:` *_[Completar con el nombre de tu TP]_*
 
 - [ ] 🟡 **04 - Organización Empresarial** (64 hs reloj) *[Regular]*
   * **Contenidos Mínimos:** Teoría general de Sistemas, Información, Conocimiento y Toma de Decisiones, Organización y Empresa, Sistemas administrativos y contables, Planificación, organización, dirección y control, Gestión por Procesos.

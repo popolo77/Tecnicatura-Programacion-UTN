@@ -11,7 +11,7 @@
     <tr>
       <td>🟢 Promocionada</td>
       <td>1° Cuatrimestre (2026)</td>
-      <td>⭐ [9</td>
+      <td>⭐ 9</td>
     </tr>
   </table>
 </div>

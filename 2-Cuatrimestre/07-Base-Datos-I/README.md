@@ -3,10 +3,10 @@
 
 
 | Estado Académico | Cursada | Calificación Final |
-| --- | --- | --- |
+| --- | --- | --- |           | ⏳ *En proceso* |
 | 🟡 En Cursado | 2° Cuatrimestre (2026)
 
- | ⏳ *En proceso* |
+ 
 
 ## 📝 Presentación de la Materia
 

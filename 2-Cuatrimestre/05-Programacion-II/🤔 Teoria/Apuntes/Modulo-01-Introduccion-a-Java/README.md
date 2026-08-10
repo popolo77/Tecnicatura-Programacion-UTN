@@ -162,7 +162,3 @@ Proceso sistemático para identificar, aislar y corregir errores lógicos o de e
 * **Step Out (Ctrl+F7):** Sale del método actual y vuelve al llamador.
 * **Watch / Variables:** Panel de inspección de variables en tiempo real.
 * **Prueba de Escritorio:** Simulación manual en papel leyendo línea por línea y registrando el valor de cada variable en una tabla.
-
-```
-
-```

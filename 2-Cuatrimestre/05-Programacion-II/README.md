@@ -40,7 +40,7 @@ Lo más valioso de mi paso por esta cursada, defendido con código y explicacion
 Podés navegar por cada módulo temático y revisar tanto los apuntes teóricos como las guías y ejercicios prácticos correspondientes:
 
 * **Módulo 01: Introducción a Java** — JVM, Bytecode, JDK, entorno NetBeans, tipos de datos y Scanner.
-  * 📖 [Ver Apuntes Teóricos](./Teoria/Apuntes/Modulo-01-Introduccion-a-Java)
+  * 📖 [Ver Apuntes Teóricos](./Teoria/Apuntes/Modulo-01-Introduccion-a-Java/README.md)
   * 💻 [Ver Ejercicios Prácticos](./Practica/Modulo-01-Introduccion-a-Java)
 
 * **Módulo 02: Programación Estructurada** — Condicionales, bucles, funciones y scope.

@@ -40,12 +40,12 @@ Lo más valioso de mi paso por esta cursada, defendido con código y explicacion
 Podés navegar por cada módulo temático y revisar tanto los apuntes teóricos como las guías y ejercicios prácticos correspondientes:
 
 * **Módulo 01: Introducción a Java** — JVM, Bytecode, JDK, entorno NetBeans, tipos de datos y Scanner.
-   * 📖 [Ver Apuntes Teóricos](./Teoria/Apuntes/Modulo-01-Introduccion-a-Java/)
-  * 💻 [Ver Ejercicios Prácticos](./Practica/Modulo-01-Introduccion-a-Java)
+  * 📖 [Ver Apuntes Teóricos](./🤔%20Teoria/Apuntes/Modulo-01-Introduccion-a-Java/)
+  * 💻 [Ver Ejercicios Prácticos](./💻%20Practica/Modulo-01-Introduccion-a-Java/)
 
 * **Módulo 02: Programación Estructurada** — Condicionales, bucles, funciones y scope.
-  * 📖 [Ver Apuntes Teóricos](./Teoria/Apuntes/Modulo-02-Programacion-Estructurada)
-  * 💻 [Ver Ejercicios Prácticos](./Practica/Modulo-02-Programacion-Estructurada)
+  * 📖 [Ver Apuntes Teóricos](./🤔%20Teoria/Apuntes/Modulo-02-Programacion-Estructurada/)
+  * 💻 [Ver Ejercicios Prácticos](./💻%20Practica/Modulo-02-Programacion-Estructurada/)
 * [Módulo 03: Introducción a la POO](./Practica/Modulo-03) — Clases, objetos, atributos, métodos, estado/identidad y encapsulamiento (getters/setters).
 * [Módulo 04: POO Avanzada](./Practica/Modulo-04) — Referencia `this`, constructores, sobrecarga, miembros `static` y relaciones iniciales entre clases.
 * [Módulo 05: Modelado UML](./Practica/Modulo-05) — Diagramas de clases, visibilidad `(+,-,#)`, herencia, dependencia, agregación y composición.

@@ -359,6 +359,3 @@ if (divisor != 0) {
 * **Breakpoint (Punto de Interrupción):** Marca colocada en el IDE para pausar la ejecución del programa y evaluar el estado de la memoria en tiempo real.
 * **Step Over (`F8`):** Ejecuta la línea seleccionada en cámara lenta y avanza a la siguiente instrucción sin ingresar a métodos secundarios.
 
-```
-
-```

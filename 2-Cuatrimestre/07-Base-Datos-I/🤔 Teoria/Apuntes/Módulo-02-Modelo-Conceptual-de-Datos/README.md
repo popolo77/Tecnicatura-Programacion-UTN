@@ -1,243 +1,301 @@
-MÓDULO 02: MODELO CONCEPTUAL DE DATOS Y DIAGRAMAS ENTIDAD-RELACIÓN (DER)
+```markdown
+# 🏛️ Guía Integral y Visual: Módulo 2 – Modelo Conceptual de Datos
 
-Materia: Bases de Datos I
-Carrera: Tecnicatura Universitaria en Programación a Distancia (UTN)
-Material: Apuntes de teoría y síntesis conceptual
+Este informe consolida todo el marco conceptual, gráfico y práctico de la **Unidad 2: Modelado Conceptual de Bases de Datos y Diagramas Entidad-Relación (DER)** de la Tecnicatura Universitaria en Programación (UTN)[cite: 2].
 
-==================================================
+---
 
-1. ¿QUÉ ES EL MODELO CONCEPTUAL?
-==================================================
+## 1. El Modelo Conceptual: Propósito y Rol del DBMS
 
-El modelo conceptual representa el primer paso formal en el diseño de una base de datos. Es una representación abstracta de alto nivel que describe qué información necesita guardar un sistema y cómo interactúa, sin importar la tecnología ni el gestor de bases de datos que se use después.
+El **Modelo Conceptual** es una representación abstracta de alto nivel que captura la información del mundo real ignorando detalles de implementación técnica o de sintaxis SQL[cite: 1, 2]. Su propósito fundamental es servir de plano guía y facilitar la comunicación clara entre las partes interesadas (stakeholders) y el equipo de desarrollo[cite: 2, 3].
 
-* Propósito: Captura los elementos esenciales de la realidad, valida reglas de negocio y sirve de comunicación unificada entre analistas, desarrolladores y clientes.
+```text
+┌─────────────────────────┐
+│ Requerimientos del      │
+│ Negocio (Mundo Real)    │
+└───────────┬─────────────┘
+            ▼
+┌─────────────────────────┐
+│ MODELO CONCEPTUAL (MER) │ ◄── Peter Chen (1976)
+└───────────┬─────────────┘
+            ▼
+┌─────────────────────────┐
+│ MODELO LÓGICO           │ ◄── Tablas, Claves Primarias/Foráneas
+└───────────┬─────────────┘
+            ▼
+┌─────────────────────────┐
+│ MOTOR DBMS (Físico)     │ ◄── MySQL, PostgreSQL, SQLite, Oracle
+└─────────────────────────┘
 
+```
 
-* Origen histórico: Propuesto por Peter Chen en 1976 con el Modelo Entidad-Relación (MER).
+### Funciones del DBMS (Sistema de Gestión de Base de Datos)
 
+El **DBMS** actúa como intermediario entre los usuarios/aplicaciones y los datos almacenados, garantizando:
 
+* **Definición de estructuras:** Creación y modificación de tablas, índices y restricciones.
 
-Flujo de Diseño:
-Requerimientos del Negocio -> Modelo Conceptual (MER/DER) -> Modelo Lógico (Tablas, PK/FK) -> Modelo Físico / DBMS (MySQL, PostgreSQL, etc.)
 
-# ==================================================
-2. EL SISTEMA GESTOR DE BASE DE DATOS (DBMS)
+* **Manipulación de datos:** Inserción, consulta, actualización y borrado (`CRUD`).
 
-Un DBMS (Database Management System) es el software intermediario entre los usuarios o aplicaciones y los datos físicos almacenados.
 
-Funciones Principales:
+* **Seguridad y Control de Acceso:** Permisos por roles de usuario.
 
-* Definición de estructuras (creación y modificación de tablas, índices y restricciones).
 
+* **Mantenimiento y Respaldo:** Copias de seguridad y recuperación ante desastres.
 
-* Manipulación de datos (inserción, consulta, actualización y borrado).
 
 
-* Seguridad y control de acceso (permisos por roles de usuario).
+| DBMS | Características y Casos de Uso |
+| --- | --- |
+| **MySQL** | Ligero, veloz, ideal para la web y aplicaciones estándar.
 
+ |
+| **PostgreSQL** | Avanzado, robusto, de código abierto, alta extensibilidad y soporte de datos complejos.
 
-* Integridad, transacciones, copias de seguridad y recuperación ante desastres.
+ |
+| **SQLite** | Motor embebido, sin servidor, utilizado en aplicaciones móviles y de escritorio.
 
+ |
+| **Oracle / SQL Server** | Alto rendimiento empresarial, escalabilidad masiva y entornos corporativos.
 
+ |
 
-Principales DBMS:
+---
 
-* MySQL: Ligero, rápido y muy utilizado en aplicaciones web.
+## 2. Componentes Fundamentales del MER y Simbología DER
 
+Propuesto por **Peter Chen en 1976**, el Modelo Entidad-Relación (MER) estandarizó el diseño de datos.
 
-* PostgreSQL: Robusto, avanzado, de código abierto y extensible.
+```text
+  ┌──────────────────┐               ◇───────────────◇               ┌──────────────────┐
+  │     ENTIDAD      ├───────────────┤   RELACIÓN    ├───────────────┤     ENTIDAD      │
+  │   [Rectángulo]   │               │   [Rombo]     │               │   [Rectángulo]   │
+  └─────────┬────────┘               ◇───────────────◇               └──────────────────┘
+            │
+            ├── ( Atributo Simple )         [Óvalo sólido]
+            ├── (( Atributo Multivaluado )) [Óvalo doble]
+            └── ( <u>Atributo Clave/PK</u> )   [Óvalo con texto subrayado]
 
+```
 
-* SQLite: Embebido, sin servidor, ideal para dispositivos móviles y aplicaciones de escritorio.
+### A. Entidades
 
+Objetos del mundo real con existencia independiente que pueden identificarse de forma unívoca.
 
-* Oracle / SQL Server: Alto rendimiento corporativo y manejo masivo de transacciones.
+* **Entidades Físicas / Tangibles:** `Estudiante`, `Profesor`, `Producto`, `Vehículo`.
 
 
+* **Entidades Conceptuales / Intangibles:** `Curso`, `Materia`, `Departamento`, `Inscripción`.
 
-# ==================================================
-3. COMPONENTES FUNDAMENTALES DEL MER
 
-A. Entidades:
-Objetos o conceptos del mundo real con existencia independiente e identificación unívoca.
+* **Entidades Débiles:** No pueden identificarse únicamente por sus propios atributos y tienen **dependencia de existencia** respecto a una entidad fuerte/propietaria. Se representan con **rectángulos dobles** y poseen una **clave parcial (o discriminador)**.
 
-* Físicas o Tangibles: Estudiante, Profesor, Producto, Vehículo.
 
+* *Ejemplo:* La entidad `Examen` dentro de un `Curso`.
 
-* Conceptuales o Intangibles: Curso, Materia, Inscripción, Departamento.
 
 
-* Entidades Débiles: No pueden identificarse únicamente por sus propios atributos y tienen dependencia de existencia respecto a una entidad fuerte propietaria. Poseen una clave parcial o discriminador y se representan con un rectángulo doble. (Ejemplo: Examen dentro de Curso).
 
 
+### B. Atributos
 
-B. Atributos:
-Características que describen a una entidad.
+Propiedades o cualidades que describen a una entidad:
 
-* Por estructura:
-* Simples (atómicos): Indivisibles (ej. DNI, Precio).
+* **Por su Estructura:**
+* **Simples / Atómicos:** Indivisibles (ej. `DNI`, `Precio`, `ID_Estudiante`).
 
 
-* Compuestos: Se descomponen en partes (ej. Dirección en Calle, Número, Ciudad).
+* **Compuestos:** Pueden dividirse en partes más pequeñas (ej. `Dirección` en `Calle`, `Número`, `Ciudad`, `Código_Postal`).
 
 
 
 
-* Por cardinalidad:
-* Monovaluados: Un solo valor por registro (ej. Fecha de nacimiento).
+* **Por su Cardinalidad:**
+* **Monovaluados:** Contienen un solo valor por instancia (ej. `Fecha_Nacimiento`).
 
 
-* Multivaluados: Múltiples valores simultáneos (ej. lista de Teléfonos, Correos).
+* **Multivaluados:** Pueden albergar múltiples valores simultáneos para la misma entidad (ej. lista de `Teléfonos`, `Correos_Electrónicos`). Se representan con doble óvalo.
 
 
 
 
-* Atributos Derivados: Se calculan a partir de otros datos (ej. Edad a partir de la fecha de nacimiento).
+* **Atributos Derivados:** Valores que no se almacenan directamente, sino que se calculan en base a otros (ej. `Edad` calculada a partir de la `Fecha_Nacimiento`).
 
 
 
-C. Relaciones:
-Asociaciones e interacciones lógicas entre dos o más entidades.
+### C. Estilos de Notación Gráfica
 
-# ==================================================
-4. CARDINALIDAD
+* **Notación Chen:** Rectángulos, rombos y óvalos. Muy completa teóricamente.
 
-Indica el número de ocurrencias de una entidad que pueden vincularse con las ocurrencias de otra:
 
-* Uno a Uno (1:1): Cada registro de A se asocia con un único registro de B, y viceversa (ej. Persona - Pasaporte).
+* **Notación Pata de Gallo (Crow's Foot):** Enfocada en tablas rectangulares con terminaciones en forma de ramificación para representar cardinalidades múltiples (`N`). Es la más empleada en la industria.
 
 
-* Uno a Muchos (1:N): Un registro de A se asocia con muchos de B, pero cada registro de B pertenece a uno solo de A (ej. Departamento - Empleados).
+* **Diagramas de Clases UML:** Representa las entidades como clases estructuradas con atributos y operaciones para diseño orientado a objetos.
 
 
-* Muchos a Muchos (N:M): Múltiples registros de A se asocian con múltiples de B (ej. Estudiante - Materias).
 
+---
 
+## 3. Cardinalidades y Relaciones
 
-* Regla de pasaje al modelo lógico: Toda relación N:M se transforma obligatoriamente en dos relaciones 1:N mediante una tabla intermedia o de intersección.
+Indica el número de instancias de una entidad que pueden vincularse con instancias de otra.
 
+```text
+[ 1:1 ]   (1) Persona ─────────────── posee ─────────────── (1) DNI
+[ 1:N ]   (1) Departamento ────────── emplea ────────────── (N) Empleados
+[ N:M ]   (N) Estudiante ──────────── inscribe ──────────── (M) Cursos
 
+```
 
-# ==================================================
-5. CLAVES E INTEGRIDAD REFERENCIAL
+* **Uno a Uno (1:1):** Cada elemento de A se asocia exactamente con un elemento de B, y viceversa (ej. `Persona` tiene una sola `Identificación Nacional`).
 
-* Clave Primaria (PK): Identificador único e irrepetible de cada fila; no admite nulos (NOT NULL).
 
+* **Uno a Muchos (1:N):** Un registro en A se asocia con muchos en B, pero cada registro de B pertenece a uno solo de A (ej. Un `Departamento` emplea muchos `Empleados`).
 
-* Claves Candidatas: Todos los atributos únicos que califican para ser clave primaria.
 
+* **Muchos a Muchos (N:M):** Múltiples instancias de A se asocian con múltiples de B (ej. `Estudiante` se inscribe en varios `Cursos` y un `Curso` tiene varios `Estudiantes`).
 
-* Clave Foránea (FK): Campo que apunta a la clave primaria de otra tabla para formalizar la relación.
 
+* **Regla de transformación al modelo lógico:** Toda relación N:M se descompone obligatoriamente en **dos relaciones 1:N utilizando una tabla intermedia o de intersección** (`Inscripción`).
 
 
-Acciones ante Modificación o Eliminación:
 
-* RESTRICT / NO ACTION: Impide borrar o modificar el registro principal si tiene hijos vinculados.
 
 
-* CASCADE: Replica en cascada la eliminación o actualización sobre los registros relacionados.
+---
 
+## 4. Claves e Integridad Referencial
 
-* SET NULL: Pone en NULL el campo foráneo de los registros hijos si se elimina el principal.
+### A. Claves
 
+* **Clave Primaria (Primary Key - PK):** Atributo único e irrepetible que no admite valores `NULL`. Debe ser mínima y preferentemente inmutable (claves numéricas autoincrementales).
 
-* SET DEFAULT: Asigna un valor predeterminado al campo foráneo al eliminarse la entidad padre.
 
+* **Claves Candidatas:** Todos los atributos únicos que califican para ser clave primaria antes de la selección final.
 
 
-# ==================================================
-6. SIMBOLOGÍA Y NOTACIONES DEL DER
+* **Clave Foránea (Foreign Key - FK):** Campo en una tabla que referencia a la PK de otra tabla, estableciendo la conexión lógica.
 
-Simbología Chen:
 
-* Rectángulos: Entidades
 
+```sql
+CREATE TABLE prestamos (
+    id INT PRIMARY KEY,
+    id_libro INT,
+    FOREIGN KEY (id_libro) REFERENCES libros(id)
+);
 
-* Rombos: Relaciones
+```
 
+### B. Acciones de Integridad Referencial
 
-* Elipses / Óvalos: Atributos
+Evitan los registros "huérfanos" en la base de datos cuando se modifican o eliminan registros padres:
 
+* **CASCADE:** Si se elimina/actualiza el registro principal, se replica la acción automáticamente en todos los registros hijos relacionados.
 
-* Doble elipse: Atributo multivaluado
-* Doble rectángulo: Entidad débil
 
+* **RESTRICT / NO ACTION:** Impide eliminar o modificar el registro padre si tiene elementos vinculados en la tabla secundaria (ej. impide borrar un curso si hay alumnos inscriptos).
 
-* Texto subrayado: Atributo clave primaria (PK)
 
-Otras notaciones:
+* **SET NULL:** Si se borra la clave principal, los campos foráneos vinculados se establecen automáticamente en `NULL`.
 
-* Notación Pata de Gallo (Crow's Foot): Utiliza símbolos en forma de ramificaciones para indicar cardinalidad múltiple, muy empleada en la industria.
 
+* **SET DEFAULT:** Asigna un valor predeterminado al campo foráneo si se suprime la entidad principal.
 
-* Diagramas de Clases UML: Representa entidades como clases con propiedades y métodos.
 
 
+---
 
-# ==================================================
-7. CASO PRÁCTICO: SISTEMA DE BIBLIOTECA
+## 5. Caso Práctico Integrador: Sistema de Biblioteca
 
-Entidades y Atributos:
+Aplicando la metodología paso a paso desde el análisis conceptual hasta las relaciones lógicas:
 
-* Libro: ISBN (PK), Título, Año_Publicación, Copias_Disponibles.
+```text
+  ┌──────────────────┐               ◇──────────────────◇               ┌──────────────────┐
+  │     MIEMBRO      │ (1)           │     PRÉSTAMO     │           (N) │      LIBRO       │
+  │ PK: ID_Miembro   ├───────────────┤ PK: ID_Prestamo  ├───────────────┤ PK: ISBN         │
+  │ Nombre, Teléfono │               │ Fecha_Prestamo   │               │ Titulo, Año      │
+  └──────────────────┘               ◇──────────────────◇               └────────┬─────────┘
+                                                                                 │ (N)
+                                                                                 │
+                                                                                 ◇ Escrito_Por ◇
+                                                                                 │
+                                                                                 │ (M)
+                                                                        ┌────────┴─────────┐
+                                                                        │      AUTOR       │
+                                                                        │ PK: ID_Autor     │
+                                                                        │ Nombre, Bio      │
+                                                                        └──────────────────┘
 
+```
 
-* Miembro: ID_Miembro (PK), Nombre, Dirección, Teléfono, Email.
+* **Entidades y Atributos:**
+* `Libro`: `ISBN` (PK), `Título`, `Año_Publicación`, `Copias_Disponibles`.
 
 
-* Préstamo: ID_Préstamo (PK), Fecha_Préstamo, Fecha_Vencimiento, Fecha_Devolución.
+* `Miembro`: `ID_Miembro` (PK), `Nombre`, `Dirección`, `Teléfono`, `Email`.
 
 
-* Autor: ID_Autor (PK), Nombre, Biografía.
+* `Préstamo`: `ID_Préstamo` (PK), `Fecha_Préstamo`, `Fecha_Vencimiento`, `Fecha_Devolución`, `Multa`.
 
 
-* Editorial: ID_Editorial (PK), Nombre, Dirección.
+* `Autor`: `ID_Autor` (PK), `Nombre`, `Biografía`.
 
 
+* `Editorial`: `ID_Editorial` (PK), `Nombre`, `Dirección`.
 
-Relaciones:
 
-* Libro - Autor: N:M (requiere tabla intermedia Libro_Autor).
 
 
-* Editorial - Libro: 1:N (una editorial publica varios libros).
+* **Relaciones:**
+* `Libro` — (N:M) — `Autor` (*requiere tabla intermedia `Libro_Autor*`).
 
 
-* Miembro - Préstamo: 1:N.
+* `Editorial` — (1:N) — `Libro` (una editorial publica varios libros).
 
 
-* Libro - Préstamo: 1:N.
+* `Miembro` — (1:N) — `Préstamo` y `Libro` — (1:N) — `Préstamo`.
 
 
 
-# ==================================================
-8. ERRORES COMUNES DE DISEÑO
 
-1. Confundir entidad con atributo (ej. poner el autor como un simple texto dentro de libro en lugar de crear una entidad Autor).
 
+---
 
-2. Asignar cardinalidades incorrectas por no analizar todos los casos de uso.
+## 6. Errores Comunes de Diseño a Evitar
 
+* **Confundir Entidad con Atributo:** Colocar `Autor` como un simple campo de texto dentro de `Libro` en lugar de crear una entidad independiente `Autor` con sus propios datos.
 
-3. Crear relaciones redundantes que ya están resueltas por caminos transitivos.
 
+* **Cardinalidades Incorrectas:** Declarar relaciones como 1:N cuando en la realidad del negocio son N:M.
 
-4. Omitir reglas de integridad referencial.
 
+* **Relaciones Redundantes:** Crear conexiones directas entre tablas cuando el camino lógico ya está resuelto mediante entidades intermedias.
 
 
-# ==================================================
-FUENTES Y REFERENCIAS
+* **Ignorar Reglas del Negocio:** Omitir restricciones de integridad provocando inconsistencias en el ciclo de vida del dato.
 
-* Chen, Peter P. (1976). The Entity-Relationship Model—Toward a Unified View of Data.
 
 
-* Cátedra Bases de Datos I — Guía de Estudio Ampliada: Diseño de Bases de Datos - Modelo Conceptual (UTN).
+---
 
+## 📚 Bibliografía y Referencias
 
-* Cátedra Bases de Datos I — Presentación: Modelado Conceptual de Bases de Datos y Diagramas Entidad-Relación (UTN).
+* **Chen, Peter P.** (1976). *The Entity-Relationship Model—Toward a Unified View of Data*.
 
 
-* Cátedra Bases de Datos I — Diseño de Bases de Datos: Modelo Conceptual (UTN).
+* **Cátedra Bases de Datos I** — *Guía de Estudio Ampliada: Diseño de Bases de Datos - Modelo Conceptual* (UTN).
+
+
+* **Cátedra Bases de Datos I** — *Presentación: Modelado Conceptual de Bases de Datos y Diagramas Entidad-Relación* (UTN).
+
+
+* **Cátedra Bases de Datos I** — *Diseño de Bases de Datos: Modelo Conceptual* (UTN).
+
+
+
+```
+
+```

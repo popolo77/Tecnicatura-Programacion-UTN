@@ -1,4 +1,3 @@
-```markdown
 # 🏛️ Guía Integral y Visual: Módulo 2 – Modelo Conceptual de Datos
 
 Este informe consolida todo el marco conceptual, gráfico y práctico de la **Unidad 2: Modelado Conceptual de Bases de Datos y Diagramas Entidad-Relación (DER)** de la Tecnicatura Universitaria en Programación (UTN)[cite: 2].
